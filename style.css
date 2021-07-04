@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  /* font-size: 10px; */
+  font-family: "Montserrat", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  background-color: transparents;
+}
+.brand h1 {
+  font-size: 3.5rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: white;
+  word-spacing: 3px;
+}
+span {
+  color: crimson;
+}
+#header {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: auto;
+}
+#header .header {
+  min-height: 8vh;
+  background-color: rgb(31, 30, 30, 0.24);
+  transition: 0.5s ease-in;
+}
+#header .nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  max-width: 1400px;
+  padding: 0 10px;
+}
+#header .nav-list ul {
+  list-style: none;
+  position: initial;
+  display: block;
+  height: auto;
+  width: fit-content;
+}
+#header .nav-list ul a {
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 20px;
+  display: block;
+  transition: 0.4s ease-in-out transform;
+}
+#header .nav-list ul li {
+  display: inline-block;
+}
+#header .nav-list ul li a {
+  font-size: 3rem;
+  letter-spacing: 4px;
+
+}
+#header .nav-list ul a:hover {
+  transform: scale(1.2);
+}
+#header .nav-list span {
+  color: crimson;
+  font-size: 3.5rem;
+}
+.section-title {
+  font-size: 4rem;
+  font-weight: 300;
+  color: black;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.section-title span {
+  color: crimson;
+}
+#first {
+  background-image: url(yannis-h-uaPaEM7MiQQ-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: relative;
+  z-index: 1;
+}
+#first::after,#old::after,#new::after,#checkout::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+#first h1 {
+  display: block;
+  width: fit-content;
+  font-size: 4rem;
+  position: relative;
+  color: transparent;
+  animation: text_reveal 0.5s ease forwards;
+  animation-delay: 1.5s;
+}
+#first h1:nth-child(1) {
+  animation-delay: 1.5s;
+}
+#first h1:nth-child(2) {
+  animation-delay: 2.5s;
+}
+#first h1:nth-child(3) {
+  animation: text_reveal_name 0.5s ease forwards;
+  animation-delay: 3.5s;
+  text-transform: uppercase;
+}
+#first h1:nth-child(1) span {
+  animation-delay: 1s;
+}
+#first h1:nth-child(2) span {
+  animation-delay: 2s;
+}
+#first h1:nth-child(3) span {
+  animation-delay: 3s;
+}
+#first h1 span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: crimson;
+  animation: text_reveal_box 1s ease;
+  animation-delay: 1s;
+}
+.port {
+  display: inline-block;
+  padding: 10px 30px;
+  color: crimson;
+  background-color: transparent;
+  border: 2px solid crimson;
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  margin-top: 20px;
+  transition: 0.4s ease;
+  transition-property: background-color, color;
+}
+.port:hover {
+  color: white;
+  background-color: crimson;
+}
+
+@keyframes text_reveal_box {
+  50% {
+    width: 100%;
+    left: 0;
+  }
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+@keyframes text_reveal {
+  100% {
+    color: white;
+  }
+}
+@keyframes text_reveal_name {
+  100% {
+    color: crimson;
+  }
+}
+.flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#old{
+  height: 70vh;
+  width: 50%;
+  position: relative;
+    z-index: 1;
+  background-image: url(siddhant-soni-CvqCzwVOhCM-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#new{
+  height: 70vh;
+  width: 50%;
+  position: relative;
+  z-index: 1;
+  background-image: url(akshar-dave-b5UILRPGV_g-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#new div,#old div
+{
+  text-align: center;
+  margin-left: 40%;
+  margin-top: 30%;
+}
+.flex h1{
+  text-transform: uppercase;
+}
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container-form {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  width: 50%;
+  position: relative;
+  margin-left: 25%;
+  
+}
+.hidden{
+  display: none;
+}
+input{
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  } 
+}
+#checkout {
+  background-image: url(ivan-aleksic-PDRFeeDniCk-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  position: relative;
+  z-index: 1;
+min-height: 100vh;
+width: 100%;
+overflow-x: hidden;
+overflow-y: hidden;
+
+}
