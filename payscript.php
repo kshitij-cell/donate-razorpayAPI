@@ -3,6 +3,15 @@
  $apiKey = "rzp_test_A8KwUpyJ0Hp2jK";
 
 ?>
+<?php
+$to = "ratan206thk@gmail.com";
+$subject = "My subject";
+$txt = "Hello world!";
+$headers = "From: webmaster@example.com" . "\r\n" .
+"CC: somebodyelse@example.com";
+
+mail($to,$subject,$txt,$headers);
+?>
 
 <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 
@@ -45,11 +54,11 @@
     })
 </script>
 <?php
-     $to = 'ratan206thk@gmail.com';
-     $subject = 'My subject';
-     $mailbody='hello';
-     $header = 'From: onlinebazzar07@gmail.com' . "\r\n" .
-     'Reply-To: onlinebazzar07@gmail.com' . "\r\n" .
-     'X-Mailer: PHP/';
-     mail($to,$subject,$mailbody,$header);
+    //  $to = 'ratan206thk@gmail.com';
+    //  $subject = 'My subject';
+    //  $mailbody='hello';
+    //  $header = 'From: onlinebazzar07@gmail.com' . "\r\n" .
+    //  'Reply-To: onlinebazzar07@gmail.com' . "\r\n" .
+    //  'X-Mailer: PHP/';
+    //  mail($to,$subject,$mailbody,$header);
 ?>
