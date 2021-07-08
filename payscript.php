@@ -50,6 +50,6 @@
      $mailbody='hello';
      $header = 'From: onlinebazzar07@gmail.com' . "\r\n" .
      'Reply-To: onlinebazzar07@gmail.com' . "\r\n" .
-     'X-Mailer: PHP/' . phpversion();
+     'X-Mailer: PHP/';
      mail($to,$subject,$mailbody,$header);
 ?>
