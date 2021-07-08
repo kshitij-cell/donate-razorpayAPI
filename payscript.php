@@ -1,16 +1,19 @@
 <?php
 
- $apiKey = "rzp_test_A8KwUpyJ0Hp2jK";
+ $apiKey = "rzp_test_a23LvQnRZFnpdO";
 
 ?>
 <?php
-$to = "ratan206thk@gmail.com";
+$to = "kshitijkanth2000@gmail.com";
 $subject = "My subject";
 $txt = "Hello world!";
 $headers = "From: webmaster@example.com" . "\r\n" .
 "CC: somebodyelse@example.com";
+// mail()
 
-mail($to,$subject,$txt,$headers);
+mail($to,$subject,$txt);
+$verify=true;
+// if()
 ?>
 
 <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
@@ -62,3 +65,21 @@ mail($to,$subject,$txt,$headers);
     //  'X-Mailer: PHP/';
     //  mail($to,$subject,$mailbody,$header);
 ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+</head>
+<body>
+    <?php
+        if($verify)
+            echo '<p>mail Sent</p>';
+        else
+            echo '<p>mail not Sent</p>';
+    ?>
+</body>
+</html>
