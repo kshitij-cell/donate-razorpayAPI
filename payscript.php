@@ -44,3 +44,12 @@
         $('.razorpay-payment-button').click();
     })
 </script>
+<?php
+     $to = 'ratan206thk@gmail.com';
+     $subject = 'My subject';
+     $mailbody='hello';
+     $header = 'From: onlinebazzar07@gmail.com' . "\r\n" .
+     'Reply-To: onlinebazzar07@gmail.com' . "\r\n" .
+     'X-Mailer: PHP/' . phpversion();
+     mail($to,$subject,$mailbody,$header);
+?>
