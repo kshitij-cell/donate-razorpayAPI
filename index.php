@@ -38,7 +38,7 @@
                 <h1>Hello,<span></span></h1>
                 <h1>Let's Nurture a<span></span></h1>
                 <h1>life<span></span></h1>
-                <a href="checkout.html" type="button" class="port">donate</a>
+                <a href="checkout.php" type="button" class="port">donate</a>
             </div>
         </div>
     </section>
