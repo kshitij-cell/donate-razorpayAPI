@@ -1,3 +1,7 @@
+<?php
+include  'check.php';
+// echo $_POST['hello'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

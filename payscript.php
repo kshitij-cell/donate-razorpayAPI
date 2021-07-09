@@ -3,19 +3,6 @@
  $apiKey = "rzp_test_a23LvQnRZFnpdO";
 
 ?>
-<?php
-$to = "kshitijkanth2000@gmail.com";
-$subject = "My subject";
-$txt = "Hello world!";
-$headers = "From: webmaster@example.com" . "\r\n" .
-"CC: somebodyelse@example.com";
-// mail()
-
-mail($to,$subject,$txt);
-$verify=true;
-// if()
-?>
-
 <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 
 
@@ -35,8 +22,10 @@ $verify=true;
     data-prefill.email="<?php echo $_POST['email'];?>"
     data-prefill.contact="<?php echo $_POST['mobile'];?>"
     data-theme.color="#2c22f6"
-></script>
+>
+</script>
 <input type="hidden" custom="Hidden Element" name="hidden">
+<input type="hidden" name="hello">
 </form>
 
 <style>
@@ -56,15 +45,6 @@ $verify=true;
         $('.razorpay-payment-button').click();
     })
 </script>
-<?php
-    //  $to = 'ratan206thk@gmail.com';
-    //  $subject = 'My subject';
-    //  $mailbody='hello';
-    //  $header = 'From: onlinebazzar07@gmail.com' . "\r\n" .
-    //  'Reply-To: onlinebazzar07@gmail.com' . "\r\n" .
-    //  'X-Mailer: PHP/';
-    //  mail($to,$subject,$mailbody,$header);
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -75,11 +55,6 @@ $verify=true;
     <title>Payment</title>
 </head>
 <body>
-    <?php
-        if($verify)
-            echo '<p>mail Sent</p>';
-        else
-            echo '<p>mail not Sent</p>';
-    ?>
+    <script src="./test.js"></script>
 </body>
 </html>
