@@ -103,7 +103,7 @@ span {
   color: crimson;
 }
 #first {
-  background-image: url(yannis-h-uaPaEM7MiQQ-unsplash.jpg);
+  background-image: url(images/yannis-h-uaPaEM7MiQQ-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -161,24 +161,6 @@ span {
   animation: text_reveal_box 1s ease;
   animation-delay: 1s;
 }
-.port {
-  display: inline-block;
-  padding: 10px 30px;
-  color: crimson;
-  background-color: transparent;
-  border: 2px solid crimson;
-  font-size: 2.4rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  margin-top: 20px;
-  transition: 0.4s ease;
-  transition-property: background-color, color;
-}
-.port:hover {
-  color: white;
-  background-color: crimson;
-}
 
 @keyframes text_reveal_box {
   50% {
@@ -211,7 +193,7 @@ span {
   width: 50%;
   position: relative;
     z-index: 1;
-  background-image: url(siddhant-soni-CvqCzwVOhCM-unsplash.jpg);
+  background-image: url(images/siddhant-soni-CvqCzwVOhCM-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -220,7 +202,7 @@ span {
   width: 50%;
   position: relative;
   z-index: 1;
-  background-image: url(akshar-dave-b5UILRPGV_g-unsplash.jpg);
+  background-image: url(images/akshar-dave-b5UILRPGV_g-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -247,7 +229,6 @@ footer .footer-header {
 }
 #footer {
   background-color: rgb(53, 50, 51);
-  /* background-image: linear-gradient(30deg, #554f4f 0%, rgb(206, 158, 158) 100%); */
 }
 #footer .footer {
   min-height: 300px;
